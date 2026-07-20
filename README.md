@@ -15,3 +15,7 @@ Run [camera.ui](https://github.com/cameraui/camera.ui) directly on Home Assistan
 3. Start it and open the web UI. The first start downloads the camera.ui server and takes a few minutes.
 
 See the add-on documentation for configuration and hardware acceleration details.
+
+---
+
+_Part of the camera.ui ecosystem - A comprehensive camera management solution._
