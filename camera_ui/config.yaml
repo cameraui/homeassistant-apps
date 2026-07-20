@@ -7,8 +7,6 @@ image: ghcr.io/cameraui/hass-addon-{arch}
 arch:
   - amd64
   - aarch64
-startup: application
-boot: auto
 init: false
 host_network: true
 ingress: true
