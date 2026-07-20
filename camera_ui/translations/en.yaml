@@ -1,0 +1,10 @@
+configuration:
+  default_plugins:
+    name: Default plugins
+    description: Comma-separated plugins installed on first boot.
+  recordings_path:
+    name: Recordings path
+    description: Paths under /media show up in the Home Assistant media browser.
+  internal_avahi:
+    name: Internal mDNS
+    description: Run the add-on's own mDNS stack. Turn off if HomeKit pairing misbehaves.

@@ -1,0 +1,50 @@
+name: camera.ui (Worker)
+version: 0.1.0
+slug: camera_ui_worker
+description: Offload frame decoding and plugins to this machine for a camera.ui master
+url: https://github.com/cameraui/hass-addons
+image: ghcr.io/cameraui/hass-addon-{arch}
+arch:
+  - amd64
+  - aarch64
+startup: application
+boot: auto
+init: false
+host_network: true
+environment:
+  CAMERA_UI_WORKER: "true"
+map:
+  - media:rw
+backup_exclude:
+  - server
+  - python
+  - plugins
+usb: true
+uart: true
+gpio: true
+video: true
+devices:
+  - /dev/dri/renderD128
+  - /dev/dri/card0
+  - /dev/dri/card1
+  - /dev/kfd
+  - /dev/apex_0
+  - /dev/apex_1
+  - /dev/apex_2
+  - /dev/apex_3
+  - /dev/hailo0
+  - /dev/vchiq
+  - /dev/video0
+  - /dev/video10
+  - /dev/video11
+  - /dev/video12
+privileged:
+  - PERFMON
+options:
+  master_address: ""
+  pairing_code: ""
+schema:
+  master_address: str
+  pairing_code: str
+  worker_name: str?
+  master_api_port: port?

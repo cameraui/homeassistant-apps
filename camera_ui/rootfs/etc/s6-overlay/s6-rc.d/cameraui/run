@@ -1,0 +1,6 @@
+#!/command/with-contenv bash
+. /etc/s6-overlay/scripts/addon-env.sh
+echo "[cameraui] starting (home: ${CAMERA_UI_HOME_PATH}${CAMERA_UI_WORKER:+, worker mode})"
+cd /root
+ulimit -c 0
+exec cameraui run --allow-root --docker ${CAMERA_UI_WORKER:+--worker} -H "${CAMERA_UI_HOME_PATH}"

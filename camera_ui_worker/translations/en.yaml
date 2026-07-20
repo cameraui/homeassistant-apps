@@ -1,0 +1,13 @@
+configuration:
+  master_address:
+    name: Master address
+    description: IP or hostname of the camera.ui master on your network.
+  pairing_code:
+    name: Pairing code
+    description: Code generated on the master. Only needed for the first connection.
+  worker_name:
+    name: Worker name
+    description: Name shown for this worker on the master.
+  master_api_port:
+    name: Master API port
+    description: Only if the master runs on a non-default port.

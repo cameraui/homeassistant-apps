@@ -1,0 +1,8 @@
+#!/command/with-contenv bash
+. /etc/s6-overlay/scripts/addon-env.sh
+if [[ "${CAMERAUI_DOCKER_AVAHI}" != "true" ]]; then
+    echo "[dbus] CAMERAUI_DOCKER_AVAHI != true — dbus disabled"
+    exec sleep infinity
+fi
+echo "[dbus] starting system bus"
+exec dbus-daemon --system --nofork --nopidfile
