@@ -12,6 +12,7 @@ host_network: true
 ingress: true
 ingress_port: 3080
 ingress_stream: true
+watchdog: tcp://[HOST]:[PORT:3080]
 panel_icon: mdi:cctv
 panel_title: camera.ui
 environment:

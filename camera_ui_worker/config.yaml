@@ -40,9 +40,8 @@ privileged:
   - PERFMON
 options:
   master_address: ""
-  pairing_code: ""
 schema:
   master_address: str
-  pairing_code: str
+  pairing_code: str?
   worker_name: str?
   master_api_port: port?

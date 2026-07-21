@@ -39,4 +39,4 @@ Everything (configuration, database, certificates) lives in the app's `/data` an
 
 Home Assistant backups of this app stay small: the camera.ui server itself is excluded and re-downloaded on restore, only your data is backed up. Restoring therefore needs internet access.
 
-Recommended: turn on the **Watchdog** toggle on the app's info page, Home Assistant then restarts camera.ui automatically if it ever goes down.
+The **Watchdog** is on by default: Home Assistant restarts camera.ui automatically if it ever goes down. You can turn it off on the app's info page.
