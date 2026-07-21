@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-# Bump both add-ons to the same version (they share one image, so their versions
+# Bump both apps to the same version (they share one image, so their versions
 # must match), commit, tag vX.Y.Z and push. The CI workflow builds and publishes
 # the image on the tag.
 #
@@ -72,7 +72,7 @@ version_of() { grep -E '^version:' "$1" | head -1 | sed -E 's/version:[[:space:]
 cur="$(version_of camera_ui/config.yaml)"
 worker_cur="$(version_of camera_ui_worker/config.yaml)"
 if [ "$cur" != "$worker_cur" ]; then
-  echo -e "${RED}Add-ons are out of lockstep: camera_ui=$cur, worker=$worker_cur. Align them first.${NC}"
+  echo -e "${RED}Apps are out of lockstep: camera_ui=$cur, worker=$worker_cur. Align them first.${NC}"
   exit 1
 fi
 
@@ -102,7 +102,7 @@ if git rev-parse "$TAG" >/dev/null 2>&1; then
   exit 1
 fi
 
-echo -e "${CYAN}Releasing add-ons: $cur -> $NEW (tag $TAG)${NC}"
+echo -e "${CYAN}Releasing apps: $cur -> $NEW (tag $TAG)${NC}"
 
 if [ "$SKIP_CHECKS" = false ]; then
   for f in "${CONFIGS[@]}"; do

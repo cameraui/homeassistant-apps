@@ -2,7 +2,7 @@
 
 Runs camera.ui as a worker for a master instance somewhere else on your network (a mini PC, a Docker host, another machine). The worker has no interface of its own. It connects to the master and runs the cameras and plugins the master hands to it, so you can use this machine's CPU, GPU or Coral for the heavy work.
 
-This is not a standalone camera.ui. If you want the full interface on your Home Assistant machine, use the **camera.ui** add-on instead.
+This is not a standalone camera.ui. If you want the full interface on your Home Assistant machine, use the **camera.ui** app instead.
 
 ## Setup
 
@@ -16,7 +16,7 @@ Then here:
 
 1. Set **Master address** to the master's IP.
 2. Set **Pairing code** to the code you just generated.
-3. Start the add-on.
+3. Start the app.
 
 The worker pairs, stores its connection, and reconnects on its own after that. You only enter the code once.
 
@@ -44,7 +44,7 @@ The first start downloads the camera.ui server from npm, this needs internet acc
 
 ## Hardware acceleration
 
-Same as the main add-on: Intel/AMD VA-API (amd64), Coral USB and PCIe, Hailo, and Raspberry Pi V4L2 decoding are included and passed through when the devices exist. NVIDIA is not available on Home Assistant OS.
+Same as the main app: Intel/AMD VA-API (amd64), Coral USB and PCIe, Hailo, and Raspberry Pi V4L2 decoding are included and passed through when the devices exist. NVIDIA is not available on Home Assistant OS.
 
 ## Network
 

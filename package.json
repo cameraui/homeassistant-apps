@@ -1,19 +1,19 @@
 {
-  "name": "@camera.ui/hass-addons",
+  "name": "@camera.ui/homeassistant-apps",
   "version": "0.0.0",
   "private": true,
-  "description": "camera.ui Home Assistant add-ons",
+  "description": "camera.ui Home Assistant apps",
   "scripts": {
     "release": "bash scripts/release.sh",
     "update": "updates -u"
   },
-  "homepage": "https://github.com/cameraui/hass-addons#readme",
+  "homepage": "https://github.com/cameraui/homeassistant-apps#readme",
   "bugs": {
-    "url": "https://github.com/cameraui/hass-addons/issues"
+    "url": "https://github.com/cameraui/homeassistant-apps/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cameraui/hass-addons.git"
+    "url": "git+https://github.com/cameraui/homeassistant-apps.git"
   },
   "license": "MIT",
   "author": "seydx",

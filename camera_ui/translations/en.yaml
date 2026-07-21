@@ -7,4 +7,4 @@ configuration:
     description: Paths under /media show up in the Home Assistant media browser.
   internal_avahi:
     name: Internal mDNS
-    description: Run the add-on's own mDNS stack. Turn off if HomeKit pairing misbehaves.
+    description: Run the app's own mDNS stack. Turn off if HomeKit pairing misbehaves.

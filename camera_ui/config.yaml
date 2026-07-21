@@ -2,8 +2,8 @@ name: camera.ui
 version: 0.1.0
 slug: camera_ui
 description: Self-hosted NVR and camera management with a modern UI
-url: https://github.com/cameraui/hass-addons
-image: ghcr.io/cameraui/hass-addon-{arch}
+url: https://github.com/cameraui/homeassistant-apps
+image: ghcr.io/cameraui/homeassistant-app-{arch}
 arch:
   - amd64
   - aarch64

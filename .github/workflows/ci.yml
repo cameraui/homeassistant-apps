@@ -38,5 +38,5 @@ jobs:
           args: |
             --amd64 --aarch64 \
             --target camera_ui \
-            --image hass-addon-{arch} \
+            --image homeassistant-app-{arch} \
             --docker-hub ghcr.io/cameraui

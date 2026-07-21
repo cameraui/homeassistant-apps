@@ -1,10 +1,10 @@
 # camera.ui
 
-Self-hosted NVR and camera management. This add-on runs the full camera.ui server on your Home Assistant OS machine.
+Self-hosted NVR and camera management. This app runs the full camera.ui server on your Home Assistant OS machine.
 
 ## First start
 
-The first start downloads the camera.ui server and default plugins from npm. Depending on your connection this takes a few minutes, the add-on needs internet access for it. Later starts are fast.
+The first start downloads the camera.ui server and default plugins from npm. Depending on your connection this takes a few minutes, the app needs internet access for it. Later starts are fast.
 
 Open the web UI at `https://<your-host>:3443` (or use the "Open Web UI" button). The certificate is self-signed, your browser will warn once.
 
@@ -20,7 +20,7 @@ Where recordings are stored. The default `/media/camera.ui` puts them into the H
 
 ### `internal_avahi`
 
-The add-on ships its own mDNS stack for HomeKit pairing and camera discovery. If HomeKit pairing misbehaves on your setup, try turning this off so camera.ui uses the host's mDNS instead.
+The app ships its own mDNS stack for HomeKit pairing and camera discovery. If HomeKit pairing misbehaves on your setup, try turning this off so camera.ui uses the host's mDNS instead.
 
 ## Hardware acceleration
 
@@ -31,12 +31,12 @@ The add-on ships its own mDNS stack for HomeKit pairing and camera discovery. If
 
 ## Network
 
-The add-on uses host networking, required for WebRTC, HomeKit and camera discovery. Ports used: 3443 (web UI/API), 2000-2004 (streaming: go2rtc, RTSP, WebRTC).
+The app uses host networking, required for WebRTC, HomeKit and camera discovery. Ports used: 3443 (web UI/API), 2000-2004 (streaming: go2rtc, RTSP, WebRTC).
 
 ## Data, backups, updates
 
-Everything (configuration, database, certificates) lives in the add-on's `/data` and survives updates. Uninstalling the add-on deletes it, recordings under `/media` are kept.
+Everything (configuration, database, certificates) lives in the app's `/data` and survives updates. Uninstalling the app deletes it, recordings under `/media` are kept.
 
-Home Assistant backups of this add-on stay small: the camera.ui server itself is excluded and re-downloaded on restore, only your data is backed up. Restoring therefore needs internet access.
+Home Assistant backups of this app stay small: the camera.ui server itself is excluded and re-downloaded on restore, only your data is backed up. Restoring therefore needs internet access.
 
-Recommended: turn on the **Watchdog** toggle on the add-on's info page, Home Assistant then restarts camera.ui automatically if it ever goes down.
+Recommended: turn on the **Watchdog** toggle on the app's info page, Home Assistant then restarts camera.ui automatically if it ever goes down.
