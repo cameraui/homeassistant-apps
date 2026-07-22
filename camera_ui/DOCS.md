@@ -38,5 +38,3 @@ The app uses host networking, required for WebRTC, HomeKit and camera discovery.
 Everything (configuration, database, certificates) lives in the app's `/data` and survives updates. Uninstalling the app deletes it, recordings under `/media` are kept.
 
 Home Assistant backups of this app stay small: the camera.ui server itself is excluded and re-downloaded on restore, only your data is backed up. Restoring therefore needs internet access.
-
-The **Watchdog** is on by default: Home Assistant restarts camera.ui automatically if it ever goes down. You can turn it off on the app's info page.
