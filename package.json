@@ -4,6 +4,7 @@
   "private": true,
   "description": "camera.ui Home Assistant apps",
   "scripts": {
+    "install-updates": "npm i --save",
     "release": "bash scripts/release.sh",
     "update": "updates -u"
   },
@@ -18,6 +19,6 @@
   "license": "MIT",
   "author": "seydx",
   "devDependencies": {
-    "updates": "^17.19.1"
+    "updates": "^17.19.2"
   }
 }
