@@ -24,7 +24,9 @@ The app ships its own mDNS stack for HomeKit pairing and camera discovery. If Ho
 
 ## Hardware acceleration
 
-- **Intel/AMD GPU (amd64):** VA-API drivers are included. The GPU is passed through automatically when `/dev/dri` exists.
+- **Intel GPU (amd64):** VA-API and OpenCL drivers are included, so OpenVINO can run detection on the GPU. The GPU is passed through automatically when `/dev/dri` exists.
+- **Intel NPU (Core Ultra, amd64):** the user-space driver is included. Needs Home Assistant OS with the `intel_vpu` kernel driver; the NPU shows up as `/dev/accel/accel0`.
+- **AMD GPU (amd64):** VA-API decoding works out of the box. ROCm is not bundled.
 - **Coral (USB and PCIe) and Hailo:** supported, the runtimes are included. PCIe Coral and Hailo need their kernel drivers on the host, which Home Assistant OS may not ship for every board.
 - **Raspberry Pi:** hardware decoding uses the V4L2 devices, passed through automatically.
 - **NVIDIA:** not available on Home Assistant OS (the OS has no NVIDIA container toolkit).
