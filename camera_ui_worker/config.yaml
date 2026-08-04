@@ -1,5 +1,5 @@
 name: camera.ui (Worker)
-version: 0.1.6
+version: 0.1.7
 slug: camera_ui_worker
 description: Offload frame decoding and plugins to this machine for a camera.ui master
 url: https://github.com/cameraui/homeassistant-apps
