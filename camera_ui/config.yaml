@@ -9,6 +9,7 @@ arch:
   - aarch64
 init: false
 host_network: true
+homeassistant_api: true
 ingress: true
 ingress_port: 3080
 ingress_stream: true
