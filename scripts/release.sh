@@ -102,6 +102,13 @@ if git rev-parse "$TAG" >/dev/null 2>&1; then
   exit 1
 fi
 
+for f in camera_ui/CHANGELOG.md camera_ui_worker/CHANGELOG.md; do
+  if ! grep -qxF "## $NEW" "$f"; then
+    echo -e "${RED}$f has no '## $NEW' section - write the changelog first.${NC}"
+    exit 1
+  fi
+done
+
 echo -e "${CYAN}Releasing apps: $cur -> $NEW (tag $TAG)${NC}"
 
 if [ "$SKIP_CHECKS" = false ]; then

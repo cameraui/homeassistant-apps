@@ -1,8 +1,32 @@
 # Changelog
 
+## 0.1.10
+
+- Dependency updates.
+
+## 0.1.9
+
+- Dependency updates.
+
+## 0.1.8
+
+- Dependency updates.
+
 ## 0.1.7
 
 - **The Home Assistant plugin can now connect from inside the add-on.** The add-on was missing the Home Assistant API permission, so the plugin's automatic connection was always rejected. Requires plugin version 1.0.8.
+
+## 0.1.6
+
+- Dependency updates.
+
+## 0.1.5
+
+- Dependency updates.
+
+## 0.1.4
+
+- Dependency updates.
 
 ## 0.1.3
 
