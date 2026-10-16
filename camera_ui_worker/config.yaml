@@ -8,6 +8,7 @@ arch:
   - amd64
   - aarch64
 init: false
+timeout: 30
 host_network: true
 environment:
   CAMERA_UI_WORKER: "true"
@@ -42,8 +43,10 @@ privileged:
   - PERFMON
 options:
   master_address: ""
+  internal_avahi: false
 schema:
   master_address: str
   pairing_code: str?
   worker_name: str?
   master_api_port: port?
+  internal_avahi: bool

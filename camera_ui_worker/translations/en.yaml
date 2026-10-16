@@ -11,3 +11,6 @@ configuration:
   master_api_port:
     name: Master API port
     description: Only if the master runs on a non-default port.
+  internal_avahi:
+    name: Internal mDNS
+    description: Run the app's own mDNS stack. Only needed if a plugin on this worker uses avahi.

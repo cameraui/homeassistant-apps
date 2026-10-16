@@ -27,7 +27,8 @@ name=$(opt worker_name)
 api_port=$(opt master_api_port)
 [ -n "$api_port" ] && printf '%s' "$api_port" > "$envdir/CAMERA_UI_WORKER_API_PORT"
 
-avahi=$(python3 -c "import json; print(str(json.load(open('$opts')).get('internal_avahi', True)).lower())")
+# off for a worker: it needs no avahi, and a second daemon on the host conflicts over the host name
+avahi=$(python3 -c "import json, os; print(str(json.load(open('$opts')).get('internal_avahi', not os.environ.get('CAMERA_UI_WORKER'))).lower())")
 printf '%s' "$avahi" > "$envdir/CAMERAUI_DOCKER_AVAHI"
 
 exit 0

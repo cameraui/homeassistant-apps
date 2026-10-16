@@ -8,6 +8,7 @@ arch:
   - amd64
   - aarch64
 init: false
+timeout: 30
 host_network: true
 homeassistant_api: true
 ingress: true
@@ -24,6 +25,10 @@ backup_exclude:
   - server
   - python
   - plugins
+  - volume/backups
+  - restore/uploads
+  - restore/staging
+  - restore/packing
 usb: true
 uart: true
 gpio: true

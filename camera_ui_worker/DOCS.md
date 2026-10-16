@@ -32,11 +32,15 @@ The code generated on the master. Only needed for the first connection.
 
 ### `worker_name`
 
-A name for this worker, shown on the master. Defaults to a generated name.
+A name for this worker, shown on the master. Defaults to the app's host name.
 
 ### `master_api_port`
 
 Only needed if the master runs its interface on a non-default port. Leave empty otherwise.
+
+### `internal_avahi`
+
+Off by default, the worker finds the master without it. Two avahi daemons on one machine, for example this one and the camera.ui app's, keep changing their host names. Turn it on only if a plugin on this worker needs avahi.
 
 ## First start
 
