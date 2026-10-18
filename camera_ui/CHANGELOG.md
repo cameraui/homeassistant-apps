@@ -1,9 +1,10 @@
 # Changelog
 
-## 0.1.12
+## 0.2.0
 
 - **Stopping or restarting the add-on no longer cuts camera.ui off while it shuts down.** Home Assistant now waits up to 30 seconds, so cameras and plugins stop cleanly.
 - **Home Assistant backups no longer contain camera.ui's own backups.** The scheduled camera.ui archives in the default folder and unfinished restore uploads are left out, so a Home Assistant backup does not grow with every camera.ui backup.
+- **A camera.ui update that does not start is rolled back.** The previous server version starts again, and its log says which update failed.
 
 ## 0.1.11
 
