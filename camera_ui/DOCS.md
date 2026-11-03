@@ -1,6 +1,6 @@
 # camera.ui
 
-Self-hosted NVR and camera management. This app runs the full camera.ui server on your Home Assistant OS machine.
+Local-first camera and NVR platform. This app runs the full camera.ui server on your Home Assistant OS machine.
 
 ## First start
 

@@ -6,7 +6,7 @@ Run [camera.ui](https://github.com/cameraui/camera.ui) directly on Home Assistan
 
 ## Apps
 
-- **camera.ui** — self-hosted NVR and camera management with live streaming, recordings, object detection and smart home integrations.
+- **camera.ui**: local-first camera and NVR platform with live streaming, recordings, object detection and smart home integrations.
 
 ## Installation
 
@@ -18,4 +18,4 @@ See the app documentation for configuration and hardware acceleration details.
 
 ---
 
-_Part of the camera.ui ecosystem - A comprehensive camera management solution._
+_Part of camera.ui, the local-first camera and NVR platform._
