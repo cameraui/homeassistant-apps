@@ -1,5 +1,5 @@
 name: camera.ui
-version: 0.2.1
+version: 0.2.2
 slug: camera_ui
 description: Local-first camera and NVR platform
 url: https://github.com/cameraui/homeassistant-apps
