@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1
+
+- Dependency updates.
+
 ## 0.2.0
 
 - **Stopping or restarting the add-on no longer cuts camera.ui off while it shuts down.** Home Assistant now waits up to 30 seconds, so cameras and plugins stop cleanly.
