@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2
+
+- **Updates no longer get stuck on "Another update is already in progress".** A restart of the app in the middle of an update blocked every further update.
+
 ## 0.2.1
 
 - Dependency updates.
