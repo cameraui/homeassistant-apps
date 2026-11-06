@@ -33,7 +33,7 @@ The app ships its own mDNS stack for HomeKit pairing and camera discovery. If Ho
 
 ## Network
 
-The app uses host networking, required for WebRTC, HomeKit and camera discovery. Ports used: 3443 (web UI/API), 2000-2004 (streaming: go2rtc, RTSP, WebRTC).
+The app uses host networking, required for WebRTC, HomeKit and camera discovery. Ports used: 3443 (web UI/API), 2000-2004 (streaming: go2rtc, RTSP, WebRTC), 2005 (ONVIF, only if turned on).
 
 ## Data, backups, updates
 
