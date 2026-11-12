@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.3
+
+- **camera.ui's own log keeps its older lines.** A full log moves its older part aside instead of cutting it.
+- Dependency updates.
+
 ## 0.2.2
 
 - **Updates no longer get stuck on "Another update is already in progress".** A restart of the app in the middle of an update blocked every further update.
