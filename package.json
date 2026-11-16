@@ -6,7 +6,8 @@
   "scripts": {
     "install-updates": "npm i --save",
     "release": "bash scripts/release.sh",
-    "update": "updates -M npm,pypi,go,cargo,docker -u"
+    "update": "updates -M npm,pypi,go,cargo,docker -u",
+    "audit": "npm audit fix --min-release-age=0"
   },
   "homepage": "https://github.com/cameraui/homeassistant-apps#readme",
   "bugs": {
