@@ -7,6 +7,7 @@ Run [camera.ui](https://github.com/cameraui/camera.ui) directly on Home Assistan
 ## Apps
 
 - **camera.ui**: local-first camera and NVR platform with live streaming, recordings, object detection and smart home integrations.
+- **camera.ui (Worker)**: turns this machine into a worker for a camera.ui master elsewhere on your network, so its CPU, GPU or Coral takes over the heavy work.
 
 ## Installation
 
